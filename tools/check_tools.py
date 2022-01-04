@@ -23,7 +23,6 @@ class CheckTools:
         :return:
         """
         for item in list(pickle.load(open(const.DATA_FILE_NAME, 'rb'))):
-            print(item.square)
             if float(item.square) < float(criteria):
                 return False
         return True
